@@ -1,0 +1,20 @@
+.contactform{
+  width: 1440px;
+  height: 608px;
+  background: linear-gradient(126.34deg, #965CB6 0%, #630C92 86.18%);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain; /* or 'auto', 'cover', etc. */
+  
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+}
+
+.contactinfoWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,158 @@
+.header {
+  background: linear-gradient(126.34deg, #965CB6 0%, #630C92 86.18%);
+
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  width: 1440px;
+  height: 104px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  box-sizing: border-box;
+}
+
+
+  .logo a {
+    display: inline-block;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 100%;
+    background: linear-gradient(126.34deg, #EFE7F4 0%, #CFB4DD 86.18%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+  
+
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  width: 290;
+  height: 24;
+  gap: 40px;
+  top: 40px;
+  left: 574px;
+  
+
+}
+
+.gradient-text {
+  background: linear-gradient(126.34deg, #EFE7F4 0%, #CFB4DD 86.18%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* fallback for some browsers */
+  color: transparent;
+}
+
+
+.nav a {
+  width: 49px;
+  height: 24px;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;letter-spacing: 0px;
+  text-align: center;
+  transition: all 200ms ease-out;
+
+
+}
+
+.nav a:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+}
+
+.actions {
+  display: flex;
+  width: 240px;
+  height: 48px;
+  gap: 16px;
+  top: 28px;
+  left: 1136.5px;
+
+
+}
+
+.signInButton {
+  width: 118;
+height: 48;
+padding-top: 12px;
+padding-right: 26px;
+padding-bottom: 12px;
+padding-left: 26px;
+gap: 10px;
+border-radius: 24px;
+border: 1px solid var(--Schemes-Surface-Variant, rgba(231, 224, 236, 1));
+text-decoration: none;
+}
+
+
+
+.registerButton{
+  width: 118;
+height: 48;
+padding-top: 12px;
+padding-right: 26px;
+padding-bottom: 12px;
+padding-left: 26px;
+gap: 10px;
+border-radius: 24px;
+background: linear-gradient(126.34deg, #EFE7F4 0%, #CFB4DD 86.18%);
+transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+
+}
+
+.signInButton {
+  color: #FFFFFF;
+}
+
+.signInButton:hover {
+  background-color: #D1A9E0; /* Slightly lighter on hover */
+}
+
+.registerButton {
+  width: 66;
+height: 24;
+font-family: Poppins;
+font-weight: 500;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0px;
+text-align: center;
+color: rgba(99, 12, 146, 1);
+text-decoration: none;
+}
+
+.registerButton:hover {
+  background-color: #F5F5F5;
+  color:#EFE7F4;
+}
+
+/* Responsive design */
+@media (max-width: 1440px) {
+  .container {
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav, .actions {
+    display: none; /* Add hamburger menu for mobile */
+  }
+}

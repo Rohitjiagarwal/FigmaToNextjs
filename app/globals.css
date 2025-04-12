@@ -1,42 +1,72 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700&display=swap');
+
+/* Now Syne font is available in all your components */
+body {
+  background-color: black;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+
+.hero {
+  background: linear-gradient(180deg, #2E1A47 0%, #5B3A8B 100%); /* Gradient from Figma */
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+.maincontainer{
+  width: 1440;
+height: 3192.447265625;
+background: black;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.contactform{
+  width: 1440px;
+  height: 608px;
+  background: linear-gradient(126.34deg, #965CB6 0%, #630C92 86.18%);
+}
+.contact-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+}
+/* styles/globals.css */
+
+/* styles/globals.css */
+
+.gradient-text {
+  background: linear-gradient(126.34deg, #EFE7F4 0%, #CFB4DD 86.18%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+
+
+@media (max-width: 1440px) {
+  .container {
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@media (max-width: 768px) {
+  .nav, .actions {
+    display: none; /* Add hamburger menu for mobile */
   }
 }
