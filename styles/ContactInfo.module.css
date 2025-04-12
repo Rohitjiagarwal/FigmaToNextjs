@@ -2,42 +2,39 @@
   display: flex;
   width: 1048px;
   height: 155px;
-
   align-items: center;
   justify-content: center;
-
   flex-direction: column;
+  gap: 15px; /* Reduce the gap between heading and description (adjust as needed) */
 }
 
 .heading {
   width: 1048px;
   height: 77px;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 64px;
-
   text-align: center;
-
   /* Gradient Text */
   background: rgba(255, 255, 255, 1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+  margin: 0; /* Remove any default margins */
 }
 
-.description{
-  display: flex;
-  width: 752;
-height: 58;
-font-family: Poppins;
-font-weight: 500;
-font-size: 18px;
-text-align: center;
-background: rgba(192, 192, 192, 1);
--webkit-background-clip: text;
+.description {
+  width: 752px; /* Fixed missing unit (assumed px) */
+  height: 58px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  background: rgba(192, 192, 192, 1);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-
+  margin: 0; /* Remove any default margins */
 }
