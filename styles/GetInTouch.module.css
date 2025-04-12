@@ -168,20 +168,20 @@ background: linear-gradient(126.34deg, #630C92 0%, #360750 86.18%);
   font-size: 24px;
   line-height: 140%;
   letter-spacing: 0;
-
+  margin:0;
 }
-
 
 .contactInfo {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 19px;
 }
 
 .infoBlock {
   display: flex;
-  align-items: flex-start;
-  gap: 12px;
+  align-items: center;
+  gap: 18px;
+  
 }
 
 .content{
@@ -197,13 +197,15 @@ background: rgba(139, 141, 152, 1);
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+  margin: 0;
+  gap: 10px;
 }
 
 .Follow{
   width: 115px;
 height: 31px;
 
-  font-family: Syne;
+  font-family: 'Syne', sans-serif;
 font-weight: 600;
 font-size: 22px;
 line-height: 140%;
@@ -223,13 +225,17 @@ background: rgba(7, 1, 19, 1);
   top: 787px;
   left: 730px;
   gap: 20px;
-  
 
 }
 
 .socials p {
   margin-bottom: 8px;
   font-weight: 500;
+}
+
+.icons{
+  display: flex;
+  gap:12px;
 }
 
 .icons span {
